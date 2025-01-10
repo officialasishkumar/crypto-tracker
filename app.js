@@ -10,7 +10,8 @@ const PORT = process.env.PORT || 3002;
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  tls: true
+  tls: true, 
+  tlsInsecure: true
 });
 
 const db = mongoose.connection;
